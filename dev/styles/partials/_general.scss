@@ -1,0 +1,25 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-prim;
+    color: $colour-prim;
+}
+
+.wrapper-prim {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.wrapper-sec {
+    width: 100%;
+    // max-width: 1140px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
