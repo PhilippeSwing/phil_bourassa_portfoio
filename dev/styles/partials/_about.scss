@@ -1,0 +1,14 @@
+.about-me__container {
+    margin: 0 auto;
+    display: flex;
+}
+
+.about-me__image-container {
+    flex: 1 1 50%;
+}
+
+.about-me__text-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+}

@@ -1,0 +1,36 @@
+.skills,
+.tools {
+    display: flex;
+    flex-direction: column;
+    &__header {
+        text-align: center;
+    }
+    &__icons {
+        display: flex;
+    }
+}
+
+
+
+.logosvg {
+    // height: auto;
+    width: 100px;
+    transition: all 0.3s;
+    &:hover {
+    filter: brightness(1.15);
+    transform: scale(1.1);
+    }
+}
+
+.icon-caption {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.react-logo path {
+    fill: #61dafb;
+}
+
+.vscode-icon path {
+    fill: #007acc;
+}
