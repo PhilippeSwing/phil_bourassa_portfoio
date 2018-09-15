@@ -1,3 +1,73 @@
 header {
+    position: relative;
+}
+
+// ==Header Top STARTS==
+.header-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // height: 15vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+.logo {
+    height: 9.4rem;
+    width: 9.1rem;
+    border: 2px solid $colour-prim;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    &__list {
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        margin-left: 50px;
+        &:first-child {
+            margin-left: 0;
+        }
+        &__link {
+            text-decoration: none;
+            color: $colour-header;
+            &:hover {
+                color: $colour-acc;
+            }
+        }
+    }
+}
+
+// ==Header Top ENDS==
+// =======================
+// ==Header Bottom STARTS==
+
+.hero {
+    // background: [background-color] [background-image] [background-position] [background-repeat] [background-attachment];
+    background: $colour-prim url('../../assets/hero/good5.jpg') top no-repeat fixed;
+    background-size: cover;
+}
+.header-bottom {
     height: 100vh;
+}
+
+.hero-text {
+    margin-top: 250px;
+    color: $colour-white;
+    &__intro {
+        strong {
+            color: $colour-acc;
+        }
+
+    }
+    &__header-main {
+
+    }
 }
