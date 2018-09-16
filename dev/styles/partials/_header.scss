@@ -80,7 +80,8 @@
 
 .hero {
     // background: [background-color] [background-image] [background-position] [background-repeat] [background-attachment];
-    background: $colour-prim url('../../assets/hero/good5.jpg') top no-repeat fixed;
+    // background: $colour-prim url('../../assets/hero/good5.jpg') top no-repeat fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/hero/good5.jpg') top no-repeat fixed;
     background-size: cover;
 }
 .header-bottom {
