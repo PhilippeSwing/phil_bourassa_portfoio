@@ -14,6 +14,9 @@
     display: flex;
     flex-direction: column;
     flex: 1 1 50%;
+    &__header {
+        text-align: left;
+    }
     &__why-me__header {
         color: $colour-acc;
     }

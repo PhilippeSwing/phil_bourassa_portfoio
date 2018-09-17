@@ -13,7 +13,7 @@
         }
         &__item {
             display: flex;
-            padding: 0 60px 60px 60px;
+            padding: 60px;
             &:nth-child(odd) {
                 background-color: $colour-shade;
             }
