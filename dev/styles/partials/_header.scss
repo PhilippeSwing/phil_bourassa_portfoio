@@ -4,7 +4,7 @@
 
 // ==Header Top STARTS==
 .header-top-container {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     z-index: 5;
 }
@@ -16,9 +16,7 @@
 }
 
 .logo {
-    height: 9.4rem;
     width: 9.1rem;
-    border: 2px solid $colour-prim;
 }
 
 .header-nav {

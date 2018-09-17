@@ -18,16 +18,16 @@
 		<div class="wrapper-prim header-top-container">
 			<section class="header-top wrapper-sec">
 				<div class="logo">
-					<img src="" alt="" class="logo__image">
+					<img src="./assets/logo.png" alt="" class="logo__image">
 				</div>
 
 				<nav class="header-nav">
 					<ul class="header-nav__list">
 						<li class="header-nav__item"><a href="#" class="header-nav__item__link hvr-underline-from-center">Home</a></li>
-						<li class="header-nav__item"><a href="#" class="header-nav__item__link hvr-underline-from-center">About</a></li>
-						<li class="header-nav__item"><a href="#" class="header-nav__item__link hvr-underline-from-center">Work</a></li>
-						<li class="header-nav__item"><a href="#" class="header-nav__item__link hvr-underline-from-center">Blog</a></li>
-						<li class="header-nav__item"><a href="#" class="header-nav__item__link hvr-underline-from-center">Contact</a></li>
+						<li class="header-nav__item"><a href="#about" class="header-nav__item__link hvr-underline-from-center">About</a></li>
+						<li class="header-nav__item"><a href="#work" class="header-nav__item__link hvr-underline-from-center">Projects</a></li>
+						<li class="header-nav__item"><a href="#blog" class="header-nav__item__link hvr-underline-from-center">Blog</a></li>
+						<li class="header-nav__item"><a href="#contact" class="header-nav__item__link hvr-underline-from-center">Contact</a></li>
 					</ul>
 				</nav>
 			</section>
@@ -72,7 +72,7 @@
 	<!-- MAIN STARTS -->
 	<main>
 		<!-- ==About Me STARTS== -->
-		<section class="about-me">
+		<section class="about-me" id="about">
 			<div class="wrapper-prim">
 				<div class="wrapper-sec about-me__container">
 					<div class="about-me__image-container">
@@ -242,7 +242,7 @@
 		<!-- ==Tools ENDS== -->
 
 		<!-- ==My Work STARTS== -->
-		<section class="projects wrapper-prim" id="projects">
+		<section class="projects wrapper-prim" id="work">
 			<div class="wrapper-sec">
 				<h2 class="projects__header section-header">My Work</h2>
 
@@ -378,28 +378,72 @@
 								<img src="./assets/projects/project3pt-demo.png" alt="" class="project__preview__image">
 							</a>
 						</li>
-						<li class="projects__nav__item project">
+						<!-- <li class="projects__nav__item project">
 
-						</li>
-					</ul>
-				</nav>
-
-
-				<nav class="projects__nav">
-					<ul class="projects__nav__list">
-						<li class="projects__nav__item"><a href="./havocofheroes/public/index.html" class="projects__nav__item__link">Project
-								6</a></li>
-						<li class="projects__nav__item"><a href="./dancetraininglog/index.html" class="projects__nav__item__link">Project
-								5</a></li>
-						<li class="projects__nav__item"><a href="./horizon.index.html" class="projects__nav__item__link">Project 4</a></li>
-						<li class="projects__nav__item"><a href="./arniesgame/index.html" class="projects__nav__item__link">Project 3</a></li>
-						<li class="projects__nav__item"><a href="./photography/index.html" class="projects__nav__item__link">Project 2</a></li>
-						<li class="projects__nav__item"><a href="./simify/index.html" class="projects__nav__item__link">Project 3 (PT JS)</a></li>
+						</li> -->
 					</ul>
 				</nav>
 			</div>
 		</section>
 		<!-- ==My Work ENDS== -->
+
+		<!-- ==Blog STARTS== -->
+		<section class="blog wrapper-prim" id="blog">
+			<div class="wrapper-sec">
+				<h2 class="blog__header section-header">My Blog</h2>
+				<div class="blog-post-container">
+					<div class="blog-post">
+						<a href="https://medium.com/@bourassa.phil/the-finer-details-using-css-pseudo-elements-to-spice-up-your-website-fea4e2493dd6"
+						 class="blog-post__image-container">
+							<img src="./assets/blogs/blog1.png" alt="" class="blog-post__image">
+						</a>
+
+						<div class="blog-post__text-container">
+							<div class="blog-post__date">
+								<p class="blog-post__date__text">Aug 6</p>
+							</div>
+							<h3 class="blog-post__header">The Finer Details: Using CSS Pseudo Elements to Spice Up Your Website</h3>
+							<p class="blog-post__summary"></p>
+							<a href="https://medium.com/@bourassa.phil/the-finer-details-using-css-pseudo-elements-to-spice-up-your-website-fea4e2493dd6"
+							 class="blog-post__read-more">Read More</a>
+						</div>
+					</div>
+
+					<div class="blog-post">
+						<a href="https://medium.com/@bourassa.phil/adding-audio-to-your-app-3910e50b0667" class="blog-post__image-container">
+							<img src="./assets/blogs/blog2a.jpg" alt="" class="blog-post__image">
+						</a>
+
+						<div class="blog-post__text-container">
+							<div class="blog-post__date">
+								<p class="blog-post__date__text">Sept 13</p>
+							</div>
+							<h3 class="blog-post__header">Adding Audio To Your App</h3>
+							<p class="blog-post__summary"></p>
+							<a href="https://medium.com/@bourassa.phil/adding-audio-to-your-app-3910e50b0667" class="blog-post__read-more">Read
+								More</a>
+						</div>
+					</div>
+
+					<div class="blog-post">
+						<a href="https://medium.com/@bourassa.phil/react-routing-with-links-and-passing-in-props-d8d64286bb30" class="blog-post__image-container">
+							<img src="./assets/blogs/blog3a.jpg" alt="" class="blog-post__image">
+						</a>
+
+						<div class="blog-post__text-container">
+							<div class="blog-post__date">
+								<p class="blog-post__date__text">Sept 13</p>
+							</div>
+							<h3 class="blog-post__header">React Routing With Links And Passing In Props</h3>
+							<p class="blog-post__summary"></p>
+							<a href="https://medium.com/@bourassa.phil/react-routing-with-links-and-passing-in-props-d8d64286bb30" class="blog-post__read-more">Read
+								More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ==Blog ENDS== -->
 	</main>
 	<!-- MAIN ENDS -->
 	<script src="/public/scripts/app.js"></script>
