@@ -34,6 +34,7 @@
         display: flex;
         flex-direction: column;
         border-top: 3px solid transparent;
+        padding: 0 30px;
     }
     &__date {
         width: 70px;
@@ -55,11 +56,15 @@
     }
     &__header {
         text-transform: capitalize;
+        margin: 32px 0 25px 0;
+    }
+    &__summary {
+        margin: 0 0 45px 0;
     }
     &__read-more {
         text-decoration: none;
         text-transform: uppercase;
         align-self: flex-end;
-        
+        margin-bottom: 30px;
     }
 }

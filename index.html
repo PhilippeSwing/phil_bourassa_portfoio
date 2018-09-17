@@ -25,7 +25,7 @@
 					<ul class="header-nav__list">
 						<li class="header-nav__item"><a href="#" class="header-nav__item__link hvr-underline-from-center">Home</a></li>
 						<li class="header-nav__item"><a href="#about" class="header-nav__item__link hvr-underline-from-center">About</a></li>
-						<li class="header-nav__item"><a href="#work" class="header-nav__item__link hvr-underline-from-center">Projects</a></li>
+						<li class="header-nav__item"><a href="#projects" class="header-nav__item__link hvr-underline-from-center">Projects</a></li>
 						<li class="header-nav__item"><a href="#blog" class="header-nav__item__link hvr-underline-from-center">Blog</a></li>
 						<li class="header-nav__item"><a href="#contact" class="header-nav__item__link hvr-underline-from-center">Contact</a></li>
 					</ul>
@@ -41,7 +41,11 @@
 			<div class="wrapper-sec">
 				<section class="header-bottom">
 					<div class="hero-text">
-						<h2 class="hero-text__intro">Hi there, my name is<strong class="my-name"> Phil</strong></h2>
+						<div id="typed-strings">
+							<h2 class="hero-text__intro">Hi there, my name is</h2>
+							<strong class="my-name"> Phil</strong>
+						</div>
+						<span id="typed"></span>
 
 						<h1 class="hero-text__header-main">Front-End Developer</h1>
 
@@ -82,9 +86,17 @@
 
 					<section class="about-me__text-container">
 						<h2 class="about-me__text-container__header">About Me</h2>
-						<p class="about-me__text-container__text">I'm awesome</p>
+						<p class="about-me__text-container__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque commodi
+							obcaecati alias velit magni suscipit porro optio nihil placeat ex, asperiores unde sit, dolorum earum quidem
+							dicta repellendus eum, dolorem quaerat id tenetur itaque distinctio! Fugiat officiis error accusantium
+							reiciendis deserunt voluptatibus maxime porro exercitationem culpa, deleniti, voluptate laudantium. Aperiam
+							officia itaque eius laborum. Dicta, tempora molestiae deleniti natus numquam omnis cum ipsum sapiente? Incidunt
+							odio repellendus dolorem repudiandae non iusto natus cupiditate iure doloremque, quod, ab omnis harum amet!
+							Tempore quibusdam, accusantium hic enim asperiores veniam expedita repellat nemo laboriosam, blanditiis
+							voluptate sunt suscipit quia aliquam corrupti provident? Perspiciatis!</p>
 						<h3 class="about-me__text-container__why-me__header">Why Me</h3>
-						<p class="about-me__text-container__why-me__text">Because I'm awesome</p>
+						<p class="about-me__text-container__why-me__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Dolores soluta nisi aut non fuga eaque totam odio tempora voluptatem cum?</p>
 						<a href="./assets/hero/good5.jpg" class="about-me__text-container__download-cv__link" download>Download My CV <i
 							 class="fas fa-download"></i></a>
 					</section>
@@ -242,9 +254,9 @@
 		<!-- ==Tools ENDS== -->
 
 		<!-- ==My Work STARTS== -->
-		<section class="projects wrapper-prim" id="work">
+		<section class="projects wrapper-prim" id="projects">
 			<div class="wrapper-sec">
-				<h2 class="projects__header section-header">My Work</h2>
+				<h2 class="projects__header section-header">My Projects</h2>
 
 				<nav class="projects__nav">
 					<ul class="projects__nav__list">
@@ -402,8 +414,9 @@
 							<div class="blog-post__date">
 								<p class="blog-post__date__text">Aug 6</p>
 							</div>
-							<h3 class="blog-post__header">The Finer Details: Using CSS Pseudo Elements to Spice Up Your Website</h3>
-							<p class="blog-post__summary"></p>
+							<h3 class="blog-post__header">Using CSS Pseudo Elements to Spice Up Your Website</h3>
+							<p class="blog-post__summary">Exploring the potential of pseudo elements to enhance the aesthetic appeal of your
+								application. Setup, a breakdown of fundamental concepts and a few practical applications.</p>
 							<a href="https://medium.com/@bourassa.phil/the-finer-details-using-css-pseudo-elements-to-spice-up-your-website-fea4e2493dd6"
 							 class="blog-post__read-more">Read More</a>
 						</div>
@@ -416,10 +429,11 @@
 
 						<div class="blog-post__text-container">
 							<div class="blog-post__date">
-								<p class="blog-post__date__text">Sept 13</p>
+								<p class="blog-post__date__text">Aug 29</p>
 							</div>
-							<h3 class="blog-post__header">Adding Audio To Your App</h3>
-							<p class="blog-post__summary"></p>
+							<h3 class="blog-post__header">Strategically Adding Audio To Your Application</h3>
+							<p class="blog-post__summary">Smart and practical use of the HTML audio element to build an audio based
+								application. Keeping your code dry, re-assigniging source attributes and generating random sound clips.</p>
 							<a href="https://medium.com/@bourassa.phil/adding-audio-to-your-app-3910e50b0667" class="blog-post__read-more">Read
 								More</a>
 						</div>
@@ -435,7 +449,9 @@
 								<p class="blog-post__date__text">Sept 13</p>
 							</div>
 							<h3 class="blog-post__header">React Routing With Links And Passing In Props</h3>
-							<p class="blog-post__summary"></p>
+							<p class="blog-post__summary">A guide on how to use React Router to setup navigation links and create a
+								multi-page
+								React application. Additionally, passing props to components rendered by React Router.</p>
 							<a href="https://medium.com/@bourassa.phil/react-routing-with-links-and-passing-in-props-d8d64286bb30" class="blog-post__read-more">Read
 								More</a>
 						</div>
@@ -446,6 +462,9 @@
 		<!-- ==Blog ENDS== -->
 	</main>
 	<!-- MAIN ENDS -->
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js ' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+	 crossorigin='anonymous'></script>
 	<script src="/public/scripts/app.js"></script>
 </body>
 
