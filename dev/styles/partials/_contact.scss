@@ -112,7 +112,7 @@
 }
 
 .contact-form {
-    flex: 0 1 50%;
+    width: calc(50% - 15px);
     flex-direction: column;
     align-items: center;
     padding: 50px 70px;
@@ -123,32 +123,32 @@
         display: flex;
     }
     &__name {
-        width: 200px;
-        height: 50px;
-        margin-right: 30px;
+        width: calc(50% - 15px);
+        padding: 12.5px 0;
+        margin-right: 15px;
         padding-left: 15px;
         background-color: $colour-shade;
         border: none;
     }
     &__email {
-        width: 200px;
-        height: 50px;
+        width: calc(50% - 15px);
+        padding: 12.5px 0;
+        margin-left: 15px;
         padding-left: 15px;
         background-color: $colour-shade;
         border: none;
     }
     &__textarea {
         margin-top: 30px;
-        width: 430px;
-        height: 250px;
+        width: 100%;
         padding: 15px;
         background-color: $colour-shade;
         border: none;
         resize: none;
     }
     &__submit {
-        height: 50px;
-        width: 200px;
+        padding: 12.5px 0;
+        width: 50%;
         border: 1px solid $colour-shade;
         background-color: transparent;
         font-size: 1.6rem;
@@ -164,7 +164,7 @@
 }
 
 .contact-info {
-    flex: 1 1 50%;
+    width: calc(50% - 15px);
     margin-left: 15px;
     display: flex;
     flex-direction: column;
@@ -220,5 +220,69 @@
     &__icon {
         font-size: 2.4rem;
         color: rgb(254, 255, 255)
+    }
+}
+
+// ========================
+// RESPONSIVE
+// ========================
+// **Portrait tablet and small desktops**
+@media (max-width: 940px) {
+    .social-footer__nav {
+        margin: 30px 0;
+        justify-content: center;
+    }
+    .contact-container {
+        flex-direction: column-reverse;
+    }
+    .contact-form,
+    .contact-info {
+        width: 100%;
+        margin: 0;
+    }
+    .contact-info {
+        &__header {
+            // text-align: center;
+            display: none;
+        }
+        &__info-container {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        &__email,
+        &__location {
+            margin: 0;
+        }
+    }
+}
+
+// **Landscape phone to portrait tablet**
+@media (max-width: 767px) {
+    .contact-info__info-container {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+}
+
+// **Landscape phones and down**
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 25px 35px;
+        &__submit {
+            margin-top: 25px;
+        }
+    }
+    .contact-info__description {
+        // text-align: center;
+    }
+
+    .contact-info__phone__icon,
+    .contact-info__location__icon,
+    .contact-info__email__icon {
+        background-color: transparent;
+        border: transparent;
+        i {
+            color: $colour-acc;
+        }
     }
 }

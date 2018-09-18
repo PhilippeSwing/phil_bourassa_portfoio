@@ -12,14 +12,14 @@ body {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    // border: 1px solid yellow;
+    border: 1px solid yellow;
 }
 
 .wrapper-sec {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
-    // border: 1px solid red;
+    border: 1px solid red;
 }
 
 img {
@@ -154,5 +154,29 @@ img {
     color: $colour-social;
     &:hover {
         color: $colour-acc;
+    }
+}
+
+// ========================
+// RESPONSIVE
+// ========================
+// **Portrait tablet and small desktops**
+@media (max-width: 940px) {
+    .wrapper-sec {
+        padding: 0 15px;
+    }
+}
+
+// **Landscape phone to portrait tablet**
+@media (max-width: 767px) {
+    
+}
+
+// **Landscape phones and down**
+@media (max-width: 480px) {
+    .section-header,
+    .about-me__text-container__header,
+    .contact__header {
+        padding: 50px 0 25px 0 !important;
     }
 }

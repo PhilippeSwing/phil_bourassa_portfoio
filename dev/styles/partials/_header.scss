@@ -1,8 +1,13 @@
+// @import "path/to/hamburgers";
 // header {
 //     position: relative;
 // }
 
 // ==Header Top STARTS==
+header {
+    position: relative;
+}
+
 .header-top-container {
     background: rgb(255, 255, 255);
     position: fixed;
@@ -111,6 +116,73 @@
     color: $colour-acc;
 }
 
+// **Hamburger Menu**
+// .hamburger {
+//   padding: 15px 15px;
+//   display: inline-block;
+//   cursor: pointer;
+//   transition-property: opacity, filter;
+//   transition-duration: 0.15s;
+//   transition-timing-function: linear;
+//   font: inherit;
+//   color: inherit;
+//   text-transform: none;
+//   background-color: transparent;
+//   border: 0;
+//   margin: 0;
+//   overflow: visible; }
+//   .hamburger:hover {
+//     opacity: 0.7; }
+
+// .hamburger-box {
+//   width: 40px;
+//   height: 24px;
+//   display: inline-block;
+//   position: relative; }
+
+// .hamburger-inner {
+//   display: block;
+//   top: 50%;
+//   margin-top: -2px; }
+//   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+//     width: 40px;
+//     height: 4px;
+//     background-color: #000;
+//     border-radius: 4px;
+//     position: absolute;
+//     transition-property: transform;
+//     transition-duration: 0.15s;
+//     transition-timing-function: ease; }
+//   .hamburger-inner::before, .hamburger-inner::after {
+//     content: "";
+//     display: block; }
+//   .hamburger-inner::before {
+//     top: -10px; }
+//   .hamburger-inner::after {
+// bottom: -10px; }
+
+// .hamburger--spin .hamburger-inner {
+//   transition-duration: 0.22s;
+//   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+//   .hamburger--spin .hamburger-inner::before {
+//     transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in; }
+//   .hamburger--spin .hamburger-inner::after {
+//     transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+// .hamburger--spin.is-active .hamburger-inner {
+//   transform: rotate(225deg);
+//   transition-delay: 0.12s;
+//   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+//   .hamburger--spin.is-active .hamburger-inner::before {
+//     top: 0;
+//     opacity: 0;
+//     transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out; }
+//   .hamburger--spin.is-active .hamburger-inner::after {
+//     bottom: 0;
+//     transform: rotate(-90deg);
+//     transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+
 // ========================
 // RESPONSIVE
 // ========================
@@ -121,7 +193,34 @@
 
 // **Landscape phone to portrait tablet**
 @media (max-width: 767px) {
+    * {
+        border: 1px solid red;
+    }
+    .logo {
+        display: none;
+    }
 
+    .header-top-container {
+        position: static;
+    }
+
+    .header-nav {
+        width: 100%;
+        &__list {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        &__item {
+            margin-left: 0;
+            width: 100%;
+            &__link {
+                width: 100%;
+                text-align: center;
+                font-size: 4rem;
+            }
+        }
+    }
 }
 
 // **Landscape phones and down**
