@@ -1,5 +1,6 @@
 
 $(function () {
+  $(this).scrollTop(0);
   // get the value of the bottom of the header-top element by adding the offset of that element plus its height, set it as a variable
   // let navBottom = $('.header-nav').offset().top + $('.header-nav').height();
 
