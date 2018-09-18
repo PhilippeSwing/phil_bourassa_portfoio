@@ -1,0 +1,15 @@
+.footer {
+    background-color: #030f13;
+    &__content-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__signature,
+    &__copyright {
+        color: #b2b2b2;
+    }
+    &__logo {
+        margin: 0 140px;
+    }
+}

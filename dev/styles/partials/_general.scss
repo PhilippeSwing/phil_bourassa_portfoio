@@ -12,14 +12,14 @@ body {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    border: 1px solid yellow;
+    // border: 1px solid yellow;
 }
 
 .wrapper-sec {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
 img {
@@ -122,11 +122,12 @@ img {
 // }
 
 .social-media__nav {
-    margin-top: 25px;
+    margin-top: 70px;
     display: flex;
     justify-content: flex-start;
     &__list {
         padding-left: 0;
+        margin: 0;
         list-style: none;
         display: flex;
         justify-content: space-between;
@@ -146,5 +147,12 @@ img {
                 }
             }
         }
+    }
+}
+
+.social-media__nav__item__link__icon.social__footer {
+    color: $colour-social;
+    &:hover {
+        color: $colour-acc;
     }
 }

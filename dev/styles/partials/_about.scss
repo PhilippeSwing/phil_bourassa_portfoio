@@ -1,5 +1,6 @@
 .about-me {
     background-color: $colour-shade;
+    padding-bottom: 100px;
     .about-me__container {
         margin: 0 auto;
         display: flex;
@@ -34,5 +35,6 @@
         color: $colour-header;
         font-size: 1.4rem;
         line-height: 2.4rem;
+        margin-top: 35px;
     }
 }

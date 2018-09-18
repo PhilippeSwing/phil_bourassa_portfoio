@@ -6,7 +6,7 @@
 .header-top-container {
     background: rgb(255, 255, 255);
     position: fixed;
-    z-index: 5;
+    z-index: 1000;
 }
 
 .header-top.nav-scroll {
@@ -92,17 +92,21 @@
 }
 
 .hero-text {
-    margin-top: 250px;
+    padding-top: 250px;
     color: $colour-white;
     &__intro {
         font-weight: 400;
         text-align: left;
-        strong {
-            color: $colour-acc;
-        }
-
     }
     &__header-main {
 
     }
+}
+
+#typed {
+    font-size: 3rem;
+}
+
+.my-name {
+    color: $colour-acc;
 }
