@@ -146,11 +146,10 @@ header {
 }
 
 // **Menu**
-.menu-icon,
-.close-icon {
+.menu-icon {
     display: none;
     color: $colour-acc;
-    position: fixed;
+    position: absolute;
     right: 30px;
     top: 30px;
     font-size: 3.5rem;
@@ -262,8 +261,8 @@ header {
         padding: 0;
         width: 200px;
         top: 80px;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
-        // position: relative;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+        position: absolute;
         right: 0;
     }
 
@@ -289,21 +288,27 @@ header {
                 width: 100%;
                 text-align: right;
                 font-size: 3rem;
-                padding: 45px 20px 45px 0;
+                padding: 30px 20px 60px 0;
                 transition: all 0.3s;
+                color: #fff;
                 &:hover,
                 &:active {
                     background-color: $colour-acc;
-                    color: #fff;
                 }
             }
         }
     }
+
     .menu-icon {
         display: block;
     }
+
     .menu-display {
         display: none;
+    }
+
+    .letsgo {
+        top: 90%;
     }
 }
 
