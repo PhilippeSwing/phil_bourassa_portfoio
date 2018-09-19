@@ -27,7 +27,7 @@ $(function () {
 
   // SMOOTH SCROLL STARTS
   // $('.header-nav__item__link').smoothScroll();
-  $('.header-nav__item__link').click(function (e) {
+  $('.header-nav__item__link, .arrow-link').click(function (e) {
     e.preventDefault();
     $('body,html').animate({
       scrollTop: $(this.hash).offset().top
@@ -47,10 +47,14 @@ $(function () {
   // MENU DISPLAY STARTS
   $('.menu-icon').on('click', function () {
     $('.header-top-container').toggleClass('menu-display');
-    // $(this).css('display', 'none');
+    // $(this).toggleClass('hide');
+    // $('close-icon').toggleClass('hide');
   });
   // MENU DISPLAY ENDS
 
+  // Projects Fade In STARTS
+  new WOW().init();
+  // Projects Fade In ENDS
 
   // ========================
   // ========================

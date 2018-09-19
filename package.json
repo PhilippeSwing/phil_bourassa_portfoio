@@ -28,10 +28,12 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "animate.css": "^3.7.0",
     "hamburgers": "^0.9.3",
     "hover.css": "^2.3.2",
     "jquery-smooth-scroll": "^2.2.0",
     "node-sass": "^4.7.1",
-    "typed.js": "^2.0.9"
+    "typed.js": "^2.0.9",
+    "wowjs": "^1.1.3"
   }
 }

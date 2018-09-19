@@ -109,6 +109,33 @@ header {
     }
 }
 
+.letsgo {
+    color: $colour-acc;
+    font-size: 3.5rem;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+@keyframes letsgoUpDown {
+    0% {
+        transform: translate(-50%, 15px);
+    }
+    50% {
+        transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(-50%, 15px);
+    }
+}
+
+.letsgo {
+    animation: letsgoUpDown 1s ease infinite;
+}
+
+// **Type animation**
 #typed {
     font-size: 3rem;
 }
@@ -119,18 +146,23 @@ header {
 }
 
 // **Menu**
-.menu-icon {
+.menu-icon,
+.close-icon {
     display: none;
     color: $colour-acc;
-    position: absolute;
+    position: fixed;
     right: 30px;
     top: 30px;
     font-size: 3.5rem;
 }
 
-// .display-none {
-//     display: none;
-// }
+.menu-slide {
+    right: -200px;
+}
+
+.hide {
+    display: none;
+}
 
 // **Hamburger Menu**
 // .hamburger {
@@ -229,9 +261,10 @@ header {
         // position: static;
         padding: 0;
         width: 200px;
-        right: 0;
         top: 80px;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+        // position: relative;
+        right: 0;
     }
 
     .header-top {

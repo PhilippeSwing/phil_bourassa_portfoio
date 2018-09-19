@@ -10,6 +10,9 @@
 	<link href="dist/hamburgers.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+	<link type="image/png" href="./assets/logo.png" rel="icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="./public/scripts/animate/animate.css/animate.css">
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -43,6 +46,8 @@
 			</section>
 		</div>
 		<i class="menu-icon fas fa-bars"></i>
+		<!-- <i class="close-icon hide fas fa-times"></i> -->
+
 
 		<!-- ==Header Top ENDS== -->
 
@@ -78,6 +83,7 @@
 					</div>
 				</section>
 			</div>
+			<a href="#projects" class="arrow-link"><i class="letsgo fas fa-angle-double-down"></i></a>
 		</div>
 		<!-- ==Header Bottom ENDS== -->
 	</header>
@@ -103,11 +109,11 @@
 				<nav class="projects__nav">
 					<ul class="projects__nav__list">
 						<li class="projects__nav__item project">
-							<a href="https://superherobattle-61d9c.firebaseapp.com" target="_blank" class="project__preview">
+							<a href="https://superherobattle-61d9c.firebaseapp.com" target="_blank" class="project__preview wow fadeInLeft">
 								<img src="./assets/projects/project6-demo.png" alt="" class="project__preview__image">
 							</a>
 
-							<div class="project__details">
+							<div class="project__details wow fadeInRight">
 								<h5 class="project__details__title">Havoc of Heroes</h5>
 								<h4 class="project__details__type">React, Firebase and API Application</h4>
 								<p class="project__details__categories">React / React Router / Firebase / API / Team Programming / Superpowers</p>
@@ -122,7 +128,7 @@
 							</div>
 						</li>
 						<li class="projects__nav__item project">
-							<div class="project__details">
+							<div class="project__details wow fadeInLeft">
 								<h5 class="project__details__title">Dance Training Log</h5>
 								<h4 class="project__details__type">React and Firebase Application</h4>
 								<p class="project__details__categories">React / React Router / Firebase / Swing Dancing</p>
@@ -137,16 +143,16 @@
 								</div>
 							</div>
 
-							<a href="https://dance-training-log.firebaseapp.com" target="_blank" class="project__preview">
+							<a href="https://dance-training-log.firebaseapp.com" target="_blank" class="project__preview wow fadeInRight">
 								<img src="./assets/projects/project5-demo.png" alt="" class="project__preview__image">
 							</a>
 						</li>
 						<li class="projects__nav__item project">
 							<a href="./horizon/index.html" target="_blank" class="project__preview">
-								<img src="./assets/projects/project4-demo.png" alt="" class="project__preview__image">
+								<img src="./assets/projects/project4-demo.png" alt="" class="project__preview__image wow fadeInLeft">
 							</a>
 
-							<div class="project__details">
+							<div class="project__details wow fadeInRight">
 								<h5 class="project__details__title">Horizon</h5>
 								<h4 class="project__details__type">API based web application</h4>
 								<p class="project__details__categories">JavaScript / JQuery / APIs / Pair Programming</p>
@@ -165,7 +171,7 @@
 							</div>
 						</li>
 						<li class="projects__nav__item project">
-							<div class="project__details">
+							<div class="project__details wow fadeInLeft">
 								<h5 class="project__details__title">Arnie's Game</h5>
 								<h4 class="project__details__type">Interactive audio based jQuery quiz</h4>
 								<p class="project__details__categories">JQuery / JavaScript / Sass / Soundboard
@@ -184,15 +190,15 @@
 							</div>
 
 							<a href="./arniesgame/index.html" target="_blank" class="project__preview">
-								<img src="./assets/projects/project3-demo.png" alt="" class="project__preview__image">
+								<img src="./assets/projects/project3-demo.png" alt="" class="project__preview__image wow fadeInRight">
 							</a>
 						</li>
 						<li class="projects__nav__item project">
 							<a href="./photography/index.html" target="_blank" class="project__preview">
-								<img src="./assets/projects/project2-demo.png" alt="" class="project__preview__image">
+								<img src="./assets/projects/project2-demo.png" alt="" class="project__preview__image wow fadeInLeft">
 							</a>
 
-							<div class="project__details">
+							<div class="project__details wow fadeInRight">
 								<h5 class="project__details__title">Italy</h5>
 								<h4 class="project__details__type">PSD to HTML conversion</h4>
 								<p class="project__details__categories">HTML5 / CSS3 / Sass / BEM / Responsive Design</p>
@@ -208,7 +214,7 @@
 							</div>
 						</li>
 						<li class="projects__nav__item project">
-							<div class="project__details">
+							<div class="project__details wow fadeInLeft">
 								<h5 class="project__details__title">Simify</h5>
 								<h4 class="project__details__type">Firebase and API media search application</h4>
 								<p class="project__details__categories">JQuery / Firebase / APIs /
@@ -227,7 +233,7 @@
 							</div>
 
 							<a href="./simify/index.html" target="_blank" class="project__preview">
-								<img src="./assets/projects/project3pt-demo.png" alt="" class="project__preview__image">
+								<img src="./assets/projects/project3pt-demo.png" alt="" class="project__preview__image wow fadeInRight">
 							</a>
 						</li>
 						<!-- <li class="projects__nav__item project">
@@ -385,7 +391,7 @@
 		<section class="blog wrapper-prim" id="blog">
 			<div class="wrapper-sec">
 				<h2 class="blog__header section-header">My Blog</h2>
-				<div class="blog-post-container">
+				<div class="blog-post-container wow fadeInUp">
 					<div class="blog-post post1">
 						<a href="https://medium.com/@bourassa.phil/the-finer-details-using-css-pseudo-elements-to-spice-up-your-website-fea4e2493dd6"
 						 class="blog-post__image-container">
@@ -470,6 +476,7 @@
 						<input type="text" name="_gotcha" style="display:none" /> -->
 
 				</form>
+
 				<div class="contact-info">
 					<h3 class="contact-info__header">Info</h3>
 					<p class="contact-info__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda commodi
@@ -522,7 +529,9 @@
 	<!-- FOOTER STARTS -->
 	<footer class="footer wrapper-prim">
 		<div class="wrapper-sec footer__content-container">
-			<p class="footer__signature">Made with <span><i class="fas fa-heart"></i></span> by: Phil Bourassa</p>
+			<p class="footer__signature">Made with <span><i class="wow heartBeat fas fa-heart"></i></span>
+				by: Phil
+				Bourassa</p>
 			<div class="logo footer__logo">
 				<img src="./assets/logo2.png" alt="Phil's logo" class="logo__image" aria="hidden">
 			</div>
@@ -549,6 +558,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script src="/path/to/flickity.pkgd.min.js"></script>
+	<script src="./public/scripts/animate/wowjs/dist/wow.min.js"></script>
 	<script src="/public/scripts/app.js"></script>
 </body>
 
