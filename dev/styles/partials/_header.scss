@@ -92,13 +92,14 @@ header {
     // background: $colour-prim url('../../assets/hero/good5.jpg') top no-repeat fixed;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/hero/good5.JPG') top no-repeat fixed;
     background-size: cover;
+    padding-top: 250px;
+    height: 100vh;
 }
 .header-bottom {
-    height: 100vh;
 }
 
 .hero-text {
-    padding-top: 250px;
+    
     color: $colour-white;
     &__intro {
         font-weight: 400;
@@ -114,7 +115,7 @@ header {
     font-size: 3.5rem;
     position: absolute;
     left: 50%;
-    top: 80%;
+    top: 90%;
     transform: translateX(-50%);
     cursor: pointer;
 }
@@ -247,6 +248,10 @@ header {
 
 // **Landscape phone to portrait tablet**
 @media (max-width: 767px) {
+    .hero {
+        padding-top: 0;
+    }
+
     .logo.header-logo {
         display: none;
     }
