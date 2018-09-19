@@ -115,7 +115,7 @@ header {
     font-size: 3.5rem;
     position: absolute;
     left: 50%;
-    top: 90%;
+    top: 80%;
     transform: translateX(-50%);
     cursor: pointer;
 }
@@ -324,5 +324,8 @@ header {
     }
     .social-media__nav {
         justify-content: center;
+    }
+    .letsgo {
+        display: none;
     }
 }
