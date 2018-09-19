@@ -1,4 +1,3 @@
-
 $(function () {
   $(this).scrollTop(0);
   // get the value of the bottom of the header-top element by adding the offset of that element plus its height, set it as a variable
@@ -38,7 +37,7 @@ $(function () {
   // FLICKITY STARTS
   $('.blog-post-container').flickity({
     // options
-    cellAlign: 'center',
+    cellAlign: 'left',
     contain: true,
     wrapAround: true,
   });

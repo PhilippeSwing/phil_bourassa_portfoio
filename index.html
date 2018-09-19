@@ -68,15 +68,15 @@
 
 						<nav class="social-media__nav">
 							<ul class="social-media__nav__list">
-								<li class="social-media__nav__item"><a href="https://github.com/PhilippeSwing/" class="social-media__nav__item__link"><i
+								<li class="social-media__nav__item"><a href="https://github.com/PhilippeSwing/" target="_blank" class="social-media__nav__item__link"><i
 										 class="fab fa-github social-media__nav__item__link__icon social-media-icon"></i></a></li>
-								<li class="social-media__nav__item"><a href="https://codepen.io/philbourassa/#" class="social-media__nav__item__link"><i
+								<li class="social-media__nav__item"><a href="https://codepen.io/philbourassa/#" target="_blank" class="social-media__nav__item__link"><i
 										 class="fab fa-codepen social-media__nav__item__link__icon social-media-icon"></i></a></li>
-								<li class="social-media__nav__item"><a href="https://www.linkedin.com/in/pb321/" class="social-media__nav__item__link"><i
+								<li class="social-media__nav__item"><a href="https://www.linkedin.com/in/pb321/" target="_blank" class="social-media__nav__item__link"><i
 										 class="fab fa-linkedin-in social-media__nav__item__link__icon social-media-icon"></i></a></li>
-								<li class="social-media__nav__item"><a href="https://medium.com/@bourassa.phil" class="social-media__nav__item__link"><i
+								<li class="social-media__nav__item"><a href="https://medium.com/@bourassa.phil" target="_blank" class="social-media__nav__item__link"><i
 										 class="fab fa-medium-m social-media__nav__item__link__icon social-media-icon"></i></a></li>
-								<li class="social-media__nav__item"><a href="https://twitter.com/philbourassa_" class="social-media__nav__item__link"><i
+								<li class="social-media__nav__item"><a href="https://twitter.com/philbourassa_" target="_blank" class="social-media__nav__item__link"><i
 										 class="fab fa-twitter social-media__nav__item__link__icon social-media-icon"></i></a></li>
 							</ul>
 						</nav>
@@ -394,7 +394,7 @@
 				<div class="blog-post-container wow fadeInUp">
 					<div class="blog-post post1">
 						<a href="https://medium.com/@bourassa.phil/the-finer-details-using-css-pseudo-elements-to-spice-up-your-website-fea4e2493dd6"
-						 class="blog-post__image-container">
+						 target="_blank" class="blog-post__image-container">
 							<img src="./assets/blogs/blog1.png" alt="" class="blog-post__image">
 						</a>
 
@@ -406,12 +406,12 @@
 							<p class="blog-post__summary">Exploring the potential of pseudo elements to enhance the aesthetic appeal of your
 								application. Setup, a breakdown of fundamental concepts and a few practical applications.</p>
 							<a href="https://medium.com/@bourassa.phil/the-finer-details-using-css-pseudo-elements-to-spice-up-your-website-fea4e2493dd6"
-							 class="blog-post__read-more">Read More</a>
+							 target="_blank" class="blog-post__read-more">Read More</a>
 						</div>
 					</div>
 
 					<div class="blog-post post2">
-						<a href="https://medium.com/@bourassa.phil/adding-audio-to-your-app-3910e50b0667" class="blog-post__image-container">
+						<a href="https://medium.com/@bourassa.phil/adding-audio-to-your-app-3910e50b0667" target="_blank" class="blog-post__image-container">
 							<img src="./assets/blogs/blog2a.jpg" alt="" class="blog-post__image">
 						</a>
 
@@ -422,13 +422,14 @@
 							<h3 class="blog-post__header">Strategically Adding Audio To Your Application</h3>
 							<p class="blog-post__summary">Smart and practical use of the HTML audio element to build an audio based
 								application. Keeping your code dry, re-assigniging source attributes and generating random sound clips.</p>
-							<a href="https://medium.com/@bourassa.phil/adding-audio-to-your-app-3910e50b0667" class="blog-post__read-more">Read
+							<a href="https://medium.com/@bourassa.phil/adding-audio-to-your-app-3910e50b0667" target="_blank" class="blog-post__read-more">Read
 								More</a>
 						</div>
 					</div>
 
 					<div class="blog-post post3">
-						<a href="https://medium.com/@bourassa.phil/react-routing-with-links-and-passing-in-props-d8d64286bb30" class="blog-post__image-container">
+						<a href="https://medium.com/@bourassa.phil/react-routing-with-links-and-passing-in-props-d8d64286bb30" target="_blank"
+						 class="blog-post__image-container">
 							<img src="./assets/blogs/blog3a.jpg" alt="" class="blog-post__image">
 						</a>
 
@@ -440,7 +441,8 @@
 							<p class="blog-post__summary">A guide on how to use React Router to setup navigation links and create a
 								multi-page
 								React application. Additionally, passing props to components rendered by React Router.</p>
-							<a href="https://medium.com/@bourassa.phil/react-routing-with-links-and-passing-in-props-d8d64286bb30" class="blog-post__read-more">Read
+							<a href="https://medium.com/@bourassa.phil/react-routing-with-links-and-passing-in-props-d8d64286bb30" target="_blank"
+							 class="blog-post__read-more">Read
 								More</a>
 						</div>
 					</div>
@@ -456,17 +458,19 @@
 				<form action="https://formspree.io/bourassa.phil@gmail.com" method="POST" class="contact-form go-bottom">
 					<div class="contact-form__name-email-container">
 
-						<input type="text" name="Name" class="contact-form__name" id="contact-form__name" placeholder="Name">
+						<input type="text" name="Name" class="contact-form__name" id="contact-form__name" placeholder="Name" required>
 						<label for="contact-form__name" class="contact-form__label name-label visuallyhidden">Name</label>
 
 
 
-						<input type="email" name="_replyto" class="contact-form__email" id="contact-form__email" placeholder="Email">
+						<input type="email" name="_replyto" class="contact-form__email" id="contact-form__email" placeholder="Email"
+						 required>
 						<label for="contact-form__email" class="contact-form__label email-label visuallyhidden">Email</label>
 
 					</div>
 					<div>
-						<textarea name="Message" id="message" cols="30" rows="12" class="contact-form__textarea" placeholder="Message"></textarea>
+						<textarea name="Message" id="message" cols="30" rows="12" class="contact-form__textarea" placeholder="Message"
+						 required></textarea>
 						<label for="message" class="contact-form__label message-label visuallyhidden">Message</label>
 					</div>
 
@@ -505,16 +509,16 @@
 
 					<nav class="social-media__nav social-footer__nav">
 						<ul class="social-media__nav__list">
-							<li class="social-media__nav__item social-footer__item"><a href="https://github.com/PhilippeSwing/" class="social-media__nav__item__link social-footer__item__link"><i
-									 class="fab fa-github social-media__nav__item__link__icon social__footer social-footer__item__icon"></i></a></li>
-							<li class="social-media__nav__item social-footer__item"><a href="https://codepen.io/philbourassa/#" class="social-media__nav__item__link social-footer__item__link"><i
-									 class="fab fa-codepen social-media__nav__item__link__icon social__footer social-footer__item__icon"></i></a></li>
-							<li class="social-media__nav__item social-footer__item"><a href="https://www.linkedin.com/in/pb321/" class="social-media__nav__item__link social-footer__item__link"><i
-									 class="fab fa-linkedin-in social-media__nav__item__link__icon social__footer social-footer__item__icon"></i></a></li>
-							<li class="social-media__nav__item social-footer__item"><a href="https://medium.com/@bourassa.phil" class="social-media__nav__item__link social-footer__item__link"><i
-									 class="fab fa-medium-m social-media__nav__item__link__icon social__footer social-footer__item__icon"></i></a></li>
-							<li class="social-media__nav__item social-footer__item"><a href="https://twitter.com/philbourassa_" class="social-media__nav__item__link social-footer__item__link"><i
-									 class="fab fa-twitter social-media__nav__item__link__icon social__footer social-footer__item__icon"></i></a></li>
+							<li class="social-media__nav__item social-footer__item"><a href="https://github.com/PhilippeSwing/" target="_blank"
+								 class="social-media__nav__item__link social-footer__item__link"><i class="fab fa-github social-media__nav__item__link__icon social__footer social-footer__item__icon"></i></a></li>
+							<li class="social-media__nav__item social-footer__item"><a href="https://codepen.io/philbourassa/#" target="_blank"
+								 class="social-media__nav__item__link social-footer__item__link"><i class="fab fa-codepen social-media__nav__item__link__icon social__footer social-footer__item__icon"></i></a></li>
+							<li class="social-media__nav__item social-footer__item"><a href="https://www.linkedin.com/in/pb321/" target="_blank"
+								 class="social-media__nav__item__link social-footer__item__link"><i class="fab fa-linkedin-in social-media__nav__item__link__icon social__footer social-footer__item__icon"></i></a></li>
+							<li class="social-media__nav__item social-footer__item"><a href="https://medium.com/@bourassa.phil" target="_blank"
+								 class="social-media__nav__item__link social-footer__item__link"><i class="fab fa-medium-m social-media__nav__item__link__icon social__footer social-footer__item__icon"></i></a></li>
+							<li class="social-media__nav__item social-footer__item"><a href="https://twitter.com/philbourassa_" target="_blank"
+								 class="social-media__nav__item__link social-footer__item__link"><i class="fab fa-twitter social-media__nav__item__link__icon social__footer social-footer__item__icon"></i></a></li>
 						</ul>
 					</nav>
 				</div>
