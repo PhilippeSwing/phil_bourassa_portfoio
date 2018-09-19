@@ -1,6 +1,7 @@
 .skills {
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
     &__header {
         text-align: center;
     }
@@ -24,10 +25,10 @@
     path {
         fill: $colour-header;
     }
-    &:hover {
-    filter: brightness(1.15);
-    transform: scale(1.1);
-    }
+    // &:hover {
+    // filter: brightness(1.15);
+    // transform: scale(1.1);
+    // }
 }
 
 .JS-icon path:nth-child(2) {
@@ -77,11 +78,18 @@
 }
 
 // **Landscape phone to portrait tablet**
-@media (max-width: 767px) {
-    
+@media (max-width: 700px) {
+    .logosvg {
+        width: 70px;
+    }
 }
 
 // **Landscape phones and down**
 @media (max-width: 480px) {
-
+    .skills__icons {
+        justify-content: center;
+    }
+    .icon {
+        width: 33%;
+    }
 }

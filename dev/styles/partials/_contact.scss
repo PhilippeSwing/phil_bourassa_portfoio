@@ -271,6 +271,17 @@
         &__submit {
             margin-top: 25px;
         }
+        &__name,
+        &__email {
+            width: 100%;
+            margin: 0;
+        }
+        &__name-email-container {
+            flex-direction: column;
+        }
+        &__name {
+            margin-bottom: 30px;
+        }
     }
     .contact-info__description {
         // text-align: center;

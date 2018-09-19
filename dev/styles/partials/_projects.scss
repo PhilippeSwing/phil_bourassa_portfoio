@@ -14,7 +14,8 @@
         &__item {
             display: flex;
             padding: 60px;
-            &:nth-child(odd) {
+            align-items: center;
+            &:nth-child(even) {
                 background-color: $colour-shade;
             }
         }
@@ -22,7 +23,7 @@
 }   
 
 .project__preview {
-    display: flex;
+    // display: flex;
     width: 50%;
 }
 
@@ -73,12 +74,49 @@
 
 }
 
+// **Portrait tablet and small desktops**
+@media (max-width: 900px) {
+    .projects__nav {
+        &__list {
+
+        }
+        &__item {
+            padding: 0;
+            flex-wrap: wrap;
+            width: 80%;
+            padding-bottom: 50px;
+            &:nth-child(even) {
+                flex-direction: column-reverse;
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .projects__header {
+        padding-bottom: 0;
+    }
+
+    .project__preview,
+    .project__details {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        &__description {
+            width: 80%;
+        }
+    }
+}
+
 // **Landscape phone to portrait tablet**
 @media (max-width: 767px) {
-    
+    .projects__nav__item {
+        width: 95%;
+    }
 }
 
 // **Landscape phones and down**
 @media (max-width: 480px) {
-
+    .projects__nav__item {
+        width: 100%;
+    }
 }

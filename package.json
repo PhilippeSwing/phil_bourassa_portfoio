@@ -30,6 +30,7 @@
   "dependencies": {
     "hamburgers": "^0.9.3",
     "hover.css": "^2.3.2",
+    "jquery-smooth-scroll": "^2.2.0",
     "node-sass": "^4.7.1",
     "typed.js": "^2.0.9"
   }

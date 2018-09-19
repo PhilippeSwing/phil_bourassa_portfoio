@@ -4,12 +4,17 @@
     .about-me__container {
         margin: 0 auto;
         display: flex;
+        flex-direction: column;
+    }
+    &__content {
+        margin: 0 auto;
+        display: flex;
     }
 }
 
 .about-me__image-container {
     flex: 1 1 50%;
-    padding: 193px 15px 0 0;
+    padding: 0 15px 0 0;
 }
 
 .about-me__text-container {
@@ -19,6 +24,10 @@
     padding: 0 0 0 15px;
     &__header {
         text-align: left;
+        width: 50%;
+        align-self: flex-end;
+        padding-left: 15px;
+        margin: 0;
     }
     &__text {
         margin: 0;
@@ -44,7 +53,23 @@
 // ========================
 // **Portrait tablet and small desktops**
 @media (max-width: 940px) {
+    .about-me__content {
+        flex-wrap: wrap;
+    }
+    .about-me__image-container {
+    flex: 0 1 50%;
+    // padding: 0 15px 0 0;
+    }
 
+    .about-me__text-container {
+        flex: 1 1 100%;
+        padding: 30px 0 0 0;
+        &__header {
+            width: 100%;
+            text-align: center;
+            padding-left: 0;
+        }
+    }
 }
 
 // **Landscape phone to portrait tablet**
@@ -54,5 +79,8 @@
 
 // **Landscape phones and down**
 @media (max-width: 480px) {
-
+    .about-me__image-container {
+        flex: 1 1 100%;
+        padding: 0;
+    }
 }

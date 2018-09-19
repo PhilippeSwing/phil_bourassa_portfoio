@@ -22,6 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    padding: 10px 0;
 }
 
 .logo {
@@ -89,7 +90,7 @@ header {
 .hero {
     // background: [background-color] [background-image] [background-position] [background-repeat] [background-attachment];
     // background: $colour-prim url('../../assets/hero/good5.jpg') top no-repeat fixed;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/hero/good5.jpg') top no-repeat fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/hero/good5.JPG') top no-repeat fixed;
     background-size: cover;
 }
 .header-bottom {
@@ -114,7 +115,22 @@ header {
 
 .my-name {
     color: $colour-acc;
+    letter-spacing: 1px;
 }
+
+// **Menu**
+.menu-icon {
+    display: none;
+    color: $colour-white;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 3.5rem;
+}
+
+// .display-none {
+//     display: none;
+// }
 
 // **Hamburger Menu**
 // .hamburger {
@@ -186,6 +202,13 @@ header {
 // ========================
 // RESPONSIVE
 // ========================
+// **Large Monitors**
+@media (max-width: 1170px) {
+    .header-top-container {
+        padding: 0 15px;
+    }
+}
+
 // **Portrait tablet and small desktops**
 @media (max-width: 940px) {
 
@@ -193,37 +216,53 @@ header {
 
 // **Landscape phone to portrait tablet**
 @media (max-width: 767px) {
-    * {
-        border: 1px solid red;
-    }
-    .logo {
+    .logo.header-logo {
         display: none;
     }
 
     .header-top-container {
-        position: static;
+        // position: static;
+        width: 200px;
+        right: 0;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    }
+
+    .header-top {
+        // position: relative;
     }
 
     .header-nav {
         width: 100%;
         &__list {
             flex-direction: column;
-            align-items: center;
+            // align-items: right;
             width: 100%;
         }
         &__item {
-            margin-left: 0;
+            margin: 40px 0;
             width: 100%;
+            // text-align: right;
             &__link {
                 width: 100%;
-                text-align: center;
-                font-size: 4rem;
+                text-align: right;
+                font-size: 3rem;
             }
         }
+    }
+    .menu-icon {
+        display: block;
+    }
+    .menu-display {
+        display: none;
     }
 }
 
 // **Landscape phones and down**
 @media (max-width: 480px) {
-
+    .hero-text {
+        text-align: center;
+    }
+    .social-media__nav {
+        justify-content: center;
+    }
 }

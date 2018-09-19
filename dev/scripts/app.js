@@ -25,4 +25,67 @@ $(function () {
     showCursor: false,
   });
 
+  // SMOOTH SCROLL STARTS
+  // $('.header-nav__item__link').smoothScroll();
+  $('.header-nav__item__link').click(function (e) {
+    e.preventDefault();
+    $('body,html').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 1200);
+  });
+  // SMOOTH SCROLL ENDS
+
+  // FLICKITY STARTS
+  $('.blog-post-container').flickity({
+    // options
+    cellAlign: 'center',
+    contain: true,
+    wrapAround: true,
+  });
+  // FLICKITY ENDS
+
+  // MENU DISPLAY STARTS
+  $('.menu-icon').on('click', function () {
+    $('.header-top-container').toggleClass('menu-display');
+    $(this).css('display', 'none');
+  });
+  // MENU DISPLAY ENDS
+
+
+  // ========================
+  // ========================
+  // BEN'S BAGELS!!!
+  const pressed = [];
+  const code = "bensbagels";
+  // let frameCount = 0;
+
+  const finishbagels = () => {
+    let bagel = document.getElementById("bagel-container");
+    bagel.className = "hide";
+  }
+
+  const trigger = () => {
+    setTimeout(
+      function () {
+        finishbagels();
+      }, 10000);
+  }
+
+  const startbagels = () => {
+    let bagel = document.getElementById("bagel-container");
+    bagel.className = "show";
+    trigger();
+
+  }
+
+  window.addEventListener("keyup", function (e) {
+    pressed.push(e.key);
+    pressed.splice(-code.length - 1, pressed.length - code.length);
+
+    if (pressed.join("").includes(code)) {
+      startbagels();
+    }
+  });
+  // BEN'S BAGELS!!!
+
 });
