@@ -41,97 +41,14 @@ img {
     }
 
 .hero-text__portfolio-button:hover {
-    background-color: $colour-white;
-    color: $colour-acc;
+    background-color: $colour-acc;
+    color: $colour-white;
     border: 2px solid $colour-acc;
 }
 
 .section-header {
     margin: 0;
 }
-
-// Button Background Sweep To Right
-// .hvr-sweep-to-right {
-//     display: inline-block;
-//     vertical-align: middle;
-//     -webkit-transform: perspective(1px) translateZ(0);
-//     transform: perspective(1px) translateZ(0);
-//     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-//     position: relative;
-//     -webkit-transition-property: color;
-//     transition-property: color;
-//     -webkit-transition-duration: 0.3s;
-//     transition-duration: 0.3s;
-// }
-// .hvr-sweep-to-right:before {
-//     content: "";
-//     position: absolute;
-//     z-index: -1;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     background: $colour-acc;
-//     -webkit-transform: scaleX(0);
-//     transform: scaleX(0);
-//     -webkit-transform-origin: 0 50%;
-//     transform-origin: 0 50%;
-//     -webkit-transition-property: transform;
-//     transition-property: transform;
-//     -webkit-transition-duration: 0.3s;
-//     transition-duration: 0.3s;
-//     -webkit-transition-timing-function: ease-out;
-//     transition-timing-function: ease-out;
-// }
-// .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
-//     color: white;
-// }
-// .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
-//     -webkit-transform: scaleX(1);
-//     transform: scaleX(1);
-// }
-
-// Button hover radial out
-// .hvr-radial-out {
-//     display: inline-block;
-//     vertical-align: middle;
-//     -webkit-transform: perspective(1px) translateZ(0);
-//     transform: perspective(1px) translateZ(0);
-//     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-//     position: relative;
-//     overflow: hidden;
-//     background: transparent;
-//     -webkit-transition-property: color;
-//     transition-property: color;
-//     -webkit-transition-duration: 0.3s;
-//     transition-duration: 0.3s;
-// }
-// .hvr-radial-out:before {
-//     content: "";
-//     position: absolute;
-//     z-index: -1;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     background: $colour-acc;
-//     border-radius: 100%;
-//     -webkit-transform: scale(0);
-//     transform: scale(0);
-//     -webkit-transition-property: transform;
-//     transition-property: transform;
-//     -webkit-transition-duration: 0.3s;
-//     transition-duration: 0.3s;
-//     -webkit-transition-timing-function: ease-out;
-//     transition-timing-function: ease-out;
-// }
-// .hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
-//     color: white;
-// }
-// .hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
-//     -webkit-transform: scale(2);
-//     transform: scale(2);
-// }
 
 .social-media__nav {
     margin-top: 70px;
@@ -167,6 +84,12 @@ img {
     &:hover {
         color: $colour-acc;
     }
+}
+
+// **Wow Animation**
+
+.wow { 
+    visibility: hidden; 
 }
 
 // ========================
@@ -247,5 +170,3 @@ img {
     animation-delay: .8s;
 }
 // BEN'S BAGELS
-
-.wow { visibility: hidden; }
