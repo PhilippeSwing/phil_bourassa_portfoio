@@ -47,7 +47,7 @@ $(function () {
   // MENU DISPLAY STARTS
   $('.menu-icon').on('click', function () {
     $('.header-top-container').toggleClass('menu-display');
-    $(this).css('display', 'none');
+    // $(this).css('display', 'none');
   });
   // MENU DISPLAY ENDS
 
