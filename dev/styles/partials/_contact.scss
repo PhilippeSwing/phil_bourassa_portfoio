@@ -91,6 +91,11 @@
         display: flex;
         flex-direction: column;
     }
+    &__description {
+        width: 70%;
+        text-align: center;
+        align-self: center;
+    }
     &__phone,
     &__location,
     &__email {
@@ -175,6 +180,13 @@
             flex-direction: column;
             justify-content: space-between;
         }
+}
+
+@media (max-width: 600px) {
+    .contact-info__description {
+        margin-bottom: 30px;
+        width: 100%;
+    }
 }
 
 // **Landscape phones and down**
