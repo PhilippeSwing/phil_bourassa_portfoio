@@ -7,7 +7,6 @@
     }
     &__icons {
         display: flex;
-        // justify-content: space-around;
         flex-wrap: wrap;
     }
 }
@@ -19,16 +18,11 @@
 }
 
 .logosvg {
-    // height: auto;
     width: 100px;
     transition: all 0.3s;
     path {
         fill: $colour-header;
     }
-    // &:hover {
-    // filter: brightness(1.15);
-    // transform: scale(1.1);
-    // }
 }
 
 .JS-icon path:nth-child(2) {
@@ -60,14 +54,6 @@
     font-size: 1.5rem;
     text-align: center;
 }
-
-// .react-logo path {
-//     fill: #61dafb;
-// }
-
-// .vscode-icon path {
-//     fill: #007acc;
-// }
 
 // ========================
 // RESPONSIVE

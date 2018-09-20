@@ -1,6 +1,5 @@
 html {
     font-size: 62.5%;
-    // scroll-behavior: smooth;
 }
 
 body {
@@ -12,14 +11,12 @@ body {
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
-    // border: 1px solid yellow;
 }
 
 .wrapper-sec {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
-    // border: 1px solid red;
 }
 
 img {
@@ -87,7 +84,6 @@ img {
 }
 
 // **Wow Animation**
-
 .wow { 
     visibility: hidden; 
 }
@@ -141,12 +137,10 @@ img {
         position: absolute;
         animation-name: falling-bagels;
         animation-duration: 5s;
-        /*animation-delay: 1s;*/
         animation-timing-function: ease-in-out;
         top: -500px;
         animation-iteration-count: 1;
         z-index: 3000;
-        /*animation-direction: */
 }
 .bagels1{
     left: 11%;
