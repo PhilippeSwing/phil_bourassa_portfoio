@@ -26,7 +26,7 @@ $(function () {
 
   // SMOOTH SCROLL STARTS
   // $('.header-nav__item__link').smoothScroll();
-  $('.header-nav__item__link, .arrow-link').click(function (e) {
+  $('.header-nav__item__link, .arrow-link, .hero-text__portfolio-button').click(function (e) {
     e.preventDefault();
     $('body,html').animate({
       scrollTop: $(this.hash).offset().top
