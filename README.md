@@ -1,1 +1,1 @@
-
+Welcome to my portfolio! It contains a selection of my projects, a little bit about myself, and links to my blog, codePen, social media, etc. Please reach out to me if you would like to discuss my work orhave any questions. http://philbourassa.ca
