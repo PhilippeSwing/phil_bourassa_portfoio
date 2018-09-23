@@ -93,8 +93,8 @@
     }
     &__description {
         width: 70%;
-        text-align: center;
-        align-self: center;
+        text-align: left;
+        align-self: flex-start;
     }
     &__phone,
     &__location,
@@ -133,12 +133,9 @@
 
 .social-footer__item {
     margin-right: 25px;
-    &__link {
-
-    }
     &__icon {
         font-size: 2.4rem;
-        color: rgb(254, 255, 255)
+        color: #4E5050 !important;
     }
 }
 
@@ -166,6 +163,11 @@
         &__info-container {
             flex-direction: row;
             justify-content: space-around;
+        }
+        &__description {
+            text-align: center;
+            align-self: center;
+            width: 100%;
         }
         &__email,
         &__location {
