@@ -136,6 +136,9 @@
     &__icon {
         font-size: 2.4rem;
         color: #4E5050 !important;
+        &:hover {
+            color: $colour-acc !important;
+        }
     }
 }
 
